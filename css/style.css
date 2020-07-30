@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.flex-block {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 50px auto 0 auto; }
+  .flex-block .slider-block {
+    max-width: 800px;
+    width: 100%;
+    height: 490px;
+    position: relative;
+    -webkit-box-shadow: 10px 10px 44px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 44px -10px rgba(0, 0, 0, 0.75); }
+    .flex-block .slider-block .slide {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .flex-block .slider-block .slide img {
+        width: 100%;
+        height: 100%; }
+    .flex-block .slider-block .slide.active {
+      display: block; }
+    .flex-block .slider-block #btn-prev, .flex-block .slider-block #btn-next {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 50px;
+      background-color: gray;
+      opacity: 0.4;
+      cursor: pointer;
+      -webkit-transition: opacity .2s ease-in-out;
+      -o-transition: opacity .2s ease-in-out;
+      transition: opacity .2s ease-in-out;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .flex-block .slider-block #btn-prev i, .flex-block .slider-block #btn-next i {
+        margin: auto;
+        font-size: 30px;
+        opacity: .6; }
+    .flex-block .slider-block #btn-next {
+      left: auto;
+      right: 0; }
+    .flex-block .slider-block #btn-prev:hover, .flex-block .slider-block #btn-next:hover {
+      opacity: 0.6; }
+      .flex-block .slider-block #btn-prev:hover i, .flex-block .slider-block #btn-next:hover i {
+        opacity: 1; }
+
+.dots-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 15px; }
+  .dots-block .dot {
+    width: 12px;
+    height: 12px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 8px; }
+  .dots-block .dot.active {
+    background-color: #717171; }
